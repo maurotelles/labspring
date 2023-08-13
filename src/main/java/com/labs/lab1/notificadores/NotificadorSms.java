@@ -1,13 +1,18 @@
 package com.labs.lab1.notificadores;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import com.labs.lab1.model.Cliente;
 
 @Component
 @Qualifier("sms")
+@Profile("prod")
 public class NotificadorSms implements Notificador {
+	public NotificadorSms() {
+		System.out.println("Notificador SMS");
+	}
 
 	@Override
 	public void notificar(Cliente cliente, String mensagem) {

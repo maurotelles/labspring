@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.labs.lab1.model.Cliente;
 import com.labs.lab1.services.AtivacaoClienteService;
 
-import lombok.AllArgsConstructor;
-
 @Controller
-@AllArgsConstructor
 public class Index {
 
 	AtivacaoClienteService ativacaoCliente;
+
+	public Index(AtivacaoClienteService ativacaoCliente) {
+		this.ativacaoCliente = ativacaoCliente;
+	}
 
 	@GetMapping
 	@ResponseBody

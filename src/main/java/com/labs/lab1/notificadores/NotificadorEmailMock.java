@@ -1,21 +1,24 @@
 package com.labs.lab1.notificadores;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
 import com.labs.lab1.model.Cliente;
 
 import lombok.Setter;
 
+@Profile("dev")
 @Setter
-@Profile("prod")
-public class NotificadorEmail implements Notificador {
+@Component
+@Qualifier("email")
+public class NotificadorEmailMock implements Notificador {
 
 	private boolean caixaAlta;
 	private String hostServidorSmtp;
 
-	public NotificadorEmail(String hostServidorSmtp) {
-		this.hostServidorSmtp = hostServidorSmtp;
-		System.out.println("Notificador email");
+	public NotificadorEmailMock() {
+		System.out.println("Notificador email MOCK");
 	}
 
 	@Override
@@ -23,7 +26,7 @@ public class NotificadorEmail implements Notificador {
 		if (caixaAlta) {
 			mensagem = mensagem.toUpperCase();
 		}
-		System.out.printf("Notificando %s através do e-mail %s, usando SMTP %s: %s\n", cliente.getNome(),
+		System.out.printf("MOCK: Notificando %s através do e-mail %s, usando SMTP %s: %s\n", cliente.getNome(),
 				cliente.getEmail(), this.hostServidorSmtp, mensagem);
 	}
 }
