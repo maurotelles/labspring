@@ -1,0 +1,15 @@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#Para Passar o profile por linha de comando, faça:
+#java -jar projeto.jar -Dspring.profiles.active=prod
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#Clicar na aba Boot Dashboard
+#Com o botão direito do mouse selecione "Open Config" coloque no campo Profile digite o profile
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££
+#Site do Spring 
+#Common Application Properties
+
+#££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££
+
+

@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 import com.labs.lab1.model.Cliente;
 
 @Component
-@Qualifier("sms")
 @Profile("prod")
+@Qualifier("sms")
 public class NotificadorSms implements Notificador {
 	public NotificadorSms() {
 		System.out.println("Notificador SMS");

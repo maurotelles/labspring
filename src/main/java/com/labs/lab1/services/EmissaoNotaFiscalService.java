@@ -18,7 +18,7 @@ public class EmissaoNotaFiscalService {
 
 	public void emitir(Cliente cliente, Produto produto) {
 		notificadores.forEach(notificador -> {
-			notificador.notificar(cliente, "Nota Fiscal do produto" + produto.getNome() + " foi emitida.");
+			notificador.notificar(cliente, "Nota Fiscal do produtofdsa" + produto.getNome() + " foi emitida.");
 		});
 	}
 
